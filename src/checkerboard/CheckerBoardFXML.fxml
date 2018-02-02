@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="vbox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="checkerboard.CheckerBoardFXMLController">
+   <children>
+      <MenuBar fx:id="menuBar">
+        <menus>
+          <Menu mnemonicParsing="false" text="Grid">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#size16x16" text="16 x 16" />
+                  <MenuItem mnemonicParsing="false" onAction="#size10x10" text="10 x 10" />
+                  <MenuItem mnemonicParsing="false" onAction="#size8x8" text="8 x 8" />
+                  <MenuItem mnemonicParsing="false" onAction="#size3x3" text="3 x 3" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Colors">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#defaultColor" text="Default" />
+                  <MenuItem mnemonicParsing="false" onAction="#blueColor" text="Blue" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</VBox>
